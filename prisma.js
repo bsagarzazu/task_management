@@ -8,11 +8,4 @@ const adapter = new PrismaBetterSqlite3({
 
 const prisma = new PrismaClient({ adapter })
 
-const nuevoProducto = await prisma.producto.create({
-    data: {
-        id: 1,
-        nombre: 'iphone'
-    }
-})
-
-console.log(nuevoProducto)
+export default prisma
